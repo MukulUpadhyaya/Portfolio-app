@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Header: React.FC = () => {
   return (
@@ -15,27 +16,27 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link to="/#about" className="hover:text-gray-200 transition">
+            <Link to="/#about" smooth className="hover:text-gray-200 transition">
               About
             </Link>
           </li>
           <li>
-            <Link to="/#experience" className="hover:text-gray-200 transition">
+            <Link to="/#experience" smooth className="hover:text-gray-200 transition">
               Experience
             </Link>
           </li>
           <li>
-            <Link to="/#projects" className="hover:text-gray-200 transition">
+            <Link to="/#projects" smooth className="hover:text-gray-200 transition">
               Projects
             </Link>
           </li>
           <li>
-            <Link to="/my-work" className="hover:text-gray-200 transition">
+            <Link to="/#my-work" className="hover:text-gray-200 transition">
               My Work
             </Link>
           </li>
           <li>
-            <Link to="/#contact" className="hover:text-gray-200 transition">
+            <Link to="/#contact" smooth className="hover:text-gray-200 transition">
               Contact
             </Link>
           </li>

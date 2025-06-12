@@ -9,7 +9,7 @@ interface WithScrollAnimationProps {
 
 const WithScrollAnimation: React.FC<WithScrollAnimationProps> = ({ animation, children, className = '' }) => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Animation triggers only once
+    triggerOnce: false, // Animation triggers only once
     threshold: 0.2, // Trigger when 20% of the element is in view
   });
 

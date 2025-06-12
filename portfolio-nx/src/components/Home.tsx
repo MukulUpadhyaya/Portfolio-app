@@ -7,6 +7,7 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import WithScrollAnimation from '../components/WithScrollAnimation';
 import Skills from '../components/Skills';
+import MyWork from './MyWork';
 
 const Home: React.FC = () => {
   return (
@@ -22,12 +23,6 @@ const Home: React.FC = () => {
             <p className="text-xl mb-8">
               I’m a Frontend Developer passionate about building modern, user-friendly web applications.
             </p>
-            <Link
-              to="/my-work"
-              className="inline-block bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition"
-            >
-              View My Work
-            </Link>
           </div>
         </section>
       </WithScrollAnimation>
@@ -37,6 +32,7 @@ const Home: React.FC = () => {
         <About />
         <Skills />
         <WorkExperience />
+        <MyWork />
         <Projects />
         <Contact />
       </main>

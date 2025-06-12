@@ -36,9 +36,7 @@ const workItems: WorkItem[] = [
 
 const MyWork: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <Header />
+     <section id="my-work" className="min-h-screen bg-gray-50">
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-12">
@@ -76,7 +74,7 @@ const MyWork: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-6">
+      {/* <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-4 text-center">
           <p className="mb-4">© 2025 Mukul. All rights reserved.</p>
           <div className="flex justify-center space-x-4">
@@ -91,8 +89,8 @@ const MyWork: React.FC = () => {
             </a>
           </div>
         </div>
-      </footer>
-    </div>
+      </footer> */}
+    </section>
   );
 };
 
