@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FaReact, FaNodeJs, FaGit, FaHtml5, FaCss3Alt, FaJs } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiPixi, SiPhaser, SiFirebase } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiFirebase } from 'react-icons/si';
 import { FaGamepad, FaPaintBrush} from 'react-icons/fa';
 import WithScrollAnimation from './WithScrollAnimation';
 
