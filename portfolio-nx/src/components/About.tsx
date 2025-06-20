@@ -14,9 +14,9 @@ const About: React.FC = () => {
           {/* About Text */}
           <div>
             <p className="text-lg text-gray-700">
-              I'm Mukul, a passionate frontend developer with expertise in React, TypeScript, and modern web technologies.
-              I specialize in building user-friendly, performant applications that solve real-world problems.
-              With a strong focus on clean code and design, I strive to create seamless digital experiences.
+              I'm Mukul, a passionate frontend developer with 3+ years of experience in building scalable web applications and interactive games using JavaScript, TypeScript, React, Phaser.js, and PIXI.js. Skilled in performance
+              optimization, design systems, and end-to-end development with a focus on reusable components
+              and maintainable code.
             </p>
           </div>
         </div>

@@ -56,7 +56,7 @@ const Header: React.FC = () => {
       <nav className="container mx-auto px-4 flex justify-between items-center">
         <div ref={pixiContainerRef} className="hover:text-gray-200 transition" />
         <ul className="flex space-x-6">
-          {['Home','About','Experience','Projects','My Work','Contact'].map((label) => (
+          {['Home','About','Experience','My Work','Projects','Contact'].map((label) => (
             <li key={label}>
               <Link to={`/${label === 'Home' ? '' : '#'+label.toLowerCase().replace(' ', '-')}`}
                     smooth
