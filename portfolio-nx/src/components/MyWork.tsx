@@ -36,7 +36,7 @@ const workItems: WorkItem[] = [
 
 const MyWork: React.FC = () => {
   return (
-     <section id="my-work" className="min-h-screen bg-gray-50">
+    <section id="my-work" className="min-h-screen bg-gray-50">
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-12">
@@ -54,7 +54,7 @@ const MyWork: React.FC = () => {
                   <a
                     href={work.link}
                     target="_blank"
-                   Built rel="noopener noreferrer"
+                    rel="noopener noreferrer"
                     className="inline-block text-blue-600 font-semibold hover:underline"
                   >
                     View Work
