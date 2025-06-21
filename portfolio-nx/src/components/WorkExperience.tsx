@@ -12,19 +12,27 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: 1,
-    title: 'Frontend Developer',
-    company: 'Tech Innovations Ltd.',
-    period: 'Jan 2023 - Present',
+    title: 'Software Engineer II',
+    company: 'Helmerich & Payne',
+    period: 'Sept 2025 - Present',
     description:
-      'Developed and maintained responsive web applications using React and TypeScript. Collaborated with UX designers to implement pixel-perfect designs and improved application performance by 20%.',
+      'Migrated a Java-based application to React, creating reusable design system components and leading unit/integration testing. Developed an admin portal with secure role-based authentication, token-based API authorization, and integrated data visualization tools. Orchestrated a Micro-Frontend migration from Vue 2 to Vue 3, reducing JavaScript bundle size by 15%.',
   },
   {
     id: 2,
-    title: 'Junior Web Developer',
-    company: 'Creative Solutions Inc.',
-    period: 'Jun 2021 - Dec 2022',
+    title: 'Frontend Developer',
+    company: 'Merkur Gaming India',
+    period: 'April 2023 - Sept 2024',
     description:
-      'Built and deployed static websites using HTML, CSS, and JavaScript. Assisted in migrating legacy applications to modern frameworks, enhancing user experience and reducing load times.',
+      'Built responsive user interfaces and optimized animations for web-based games using Phaser, PIXI, React, and TypeScript, developing a reusable framework to streamline future game development. Created mobile-friendly interfaces with optimized performance for low-bandwidth users, enhancing overall user experience.',
+  },
+  {
+    id: 3,
+    title: 'Frontend Developer',
+    company: 'Ingenuity Gaming',
+    period: 'Sept 2021 - March 2023',
+    description:
+      'Improved game performance by 30% through asset and animation optimization, contributing to architectural decisions. Developed a responsive frontend platform using React, maintaining high code quality through reviews. Implemented localization for games across 26 countries, optimizing assets and rendering performance.',
   },
 ];
 

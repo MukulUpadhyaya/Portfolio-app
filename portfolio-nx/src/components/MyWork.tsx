@@ -13,24 +13,24 @@ interface WorkItem {
 const workItems: WorkItem[] = [
   {
     id: 1,
-    title: 'E-Commerce Dashboard',
+    title: 'Gem fall',
     description:
-      'Designed and developed a responsive e-commerce dashboard using React and Tailwind CSS. Implemented features like real-time sales analytics, product management, and user authentication. The project improved client efficiency by 30% through streamlined workflows.',
-    link: 'https://example.com/ecommerce-dashboard',
+      'Gem Fall is a Megaways-powered online slot with a dazzling gem-themed aesthetic, with a horizontal reel in it; it is built to deliver a dynamic and immersive experience across desktop and mobile platforms. As the frontend dev, I’ve worked to create a visually stunning interface with smooth animations, responsive design, and intuitive controls, all underpinned by the game’s core mechanics: up to 117,649 ways to win on a 6-reel grid, cascading wins, and feature-rich gameplay.',
+    link: 'https://newslotgames.net/merkur-gaming/gem-fall.html',
   },
   {
     id: 2,
-    title: 'Personal Blog Platform',
+    title: 'Tripple Thunder',
     description:
-      'Built a full-stack personal blog platform with Next.js and Firebase. Integrated Markdown support for blog posts, a commenting system, and SEO optimization. The platform achieved over 1,000 monthly users within three months of launch.',
-    link: 'https://example.com/blog-platform',
+      'A vibrant cascading slot game with dynamic reels and bonus rounds, built using JavaScript, TypeScript, and PIXI.js. Optimized for cross-platform play, it achieved 30% faster performance via asset optimization, ensuring smooth 60 FPS gameplay on desktops and mobiles.',
+    link: 'https://www.tomhorngaming.com/games/triple-thunder/',
   },
   {
     id: 3,
-    title: 'Weather App',
+    title: 'Final Frontier',
     description:
-      'Created a weather application using React and the OpenWeather API. Features include real-time weather updates, a 5-day forecast, and location-based weather data. Styled with Tailwind CSS for a clean and modern UI.',
-    link: 'https://example.com/weather-app',
+      'A space-themed web game with mobile-first UI, built using React, Phaser, PIXI, and TypeScript. Optimized for low-bandwidth networks with adaptive asset quality, it offers responsive controls and smooth gameplay across devices, ensuring accessibility and fast load times.',
+    link: 'https://www.slotstemple.com/free-slots/final-frontier/',
   },
 ];
 
@@ -54,7 +54,7 @@ const MyWork: React.FC = () => {
                   <a
                     href={work.link}
                     target="_blank"
-                    rel="noopener noreferrer"
+                   Built rel="noopener noreferrer"
                     className="inline-block text-blue-600 font-semibold hover:underline"
                   >
                     View Work
