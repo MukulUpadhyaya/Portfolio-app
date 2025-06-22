@@ -11,15 +11,15 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Project One',
-    description: 'A cool project built with React and TypeScript.',
+    title: 'Well Management Application',
+    description: 'Built a well management app with admin controls, streamlining task assignment for multiple users using Google Firebase.',
     link: 'https://example.com/project-one',
   },
   {
     id: 2,
-    title: 'Project Two',
-    description: 'An awesome app with Vite and Tailwind CSS.',
-    link: 'https://example.com/project-two',
+    title: 'YouTube Cone',
+    description: 'An awesome YouTube clone which have live chat feature.',
+    link: 'https://youtube2023-react-clone.netlify.app/',
   },
 ];
 
