@@ -26,7 +26,7 @@ const skills: Skill[] = [
     )
   },
   { id: 8, name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-4xl mx-auto" /> },
-  { id: 9, name: 'Firebase', icon: <SiFirebase className="text-yellow-600 text-4xl mx-auto" /> }, { id: 10, name: 'Git', level: 'Intermediate', icon: <FaGit className="text-red-600 text-4xl mx-auto" /> },
+  { id: 9, name: 'Firebase', icon: <SiFirebase className="text-yellow-600 text-4xl mx-auto" /> }, { id: 10, name: 'Git', icon: <FaGit className="text-red-600 text-4xl mx-auto" /> },
 ];
 
 const Skills: React.FC = () => {
