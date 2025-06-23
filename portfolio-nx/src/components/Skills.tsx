@@ -1,31 +1,32 @@
 import * as React from 'react';
 import { FaReact, FaNodeJs, FaGit, FaHtml5, FaCss3Alt, FaJs } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiFirebase } from 'react-icons/si';
-import { FaGamepad, FaPaintBrush} from 'react-icons/fa';
+import { FaGamepad, FaPaintBrush } from 'react-icons/fa';
 import WithScrollAnimation from './WithScrollAnimation';
 
 interface Skill {
   id: number;
   name: string;
-  level: string;
   icon: JSX.Element;
 }
 
 const skills: Skill[] = [
-  { id: 1, name: 'React', level: 'Advanced', icon: <FaReact className="text-blue-500 text-4xl mx-auto" /> },
-  { id: 2, name: 'TypeScript', level: 'Advanced', icon: <SiTypescript className="text-blue-600 text-4xl mx-auto" /> },
-  { id: 3, name: 'PIXI', level: 'Advanced', icon: <FaPaintBrush className="text-purple-600 text-4xl mx-auto" /> },
-  { id: 4, name: 'Phaser', level: 'Advanced', icon: <FaGamepad className="text-indigo-600 text-4xl mx-auto" /> },
-  { id: 5, name: 'Tailwind CSS', level: 'Advanced', icon: <SiTailwindcss className="text-teal-500 text-4xl mx-auto" /> },
-  { id: 6, name: 'JavaScript', level: 'Advanced', icon: <FaJs className="text-yellow-500 text-4xl mx-auto" /> },
-  { id: 7, name: 'HTML & CSS', level: 'Advanced', icon: (
-    <div className="flex justify-center space-x-2 text-4xl">
-      <FaHtml5 className="text-orange-600" />
-      <FaCss3Alt className="text-blue-600" />
-    </div>
-  ) },
-  { id: 8, name: 'Node.js', level: 'Intermediate', icon: <FaNodeJs className="text-green-600 text-4xl mx-auto" /> },
-{ id: 9, name: 'Firebase', level: 'Intermediate', icon: <SiFirebase className="text-yellow-600 text-4xl mx-auto" /> },  { id: 10, name: 'Git', level: 'Intermediate', icon: <FaGit className="text-red-600 text-4xl mx-auto" /> },
+  { id: 1, name: 'React', icon: <FaReact className="text-blue-500 text-4xl mx-auto" /> },
+  { id: 2, name: 'TypeScript', icon: <SiTypescript className="text-blue-600 text-4xl mx-auto" /> },
+  { id: 3, name: 'PIXI', icon: <FaPaintBrush className="text-purple-600 text-4xl mx-auto" /> },
+  { id: 4, name: 'Phaser', icon: <FaGamepad className="text-indigo-600 text-4xl mx-auto" /> },
+  { id: 5, name: 'Tailwind CSS', icon: <SiTailwindcss className="text-teal-500 text-4xl mx-auto" /> },
+  { id: 6, name: 'JavaScript', icon: <FaJs className="text-yellow-500 text-4xl mx-auto" /> },
+  {
+    id: 7, name: 'HTML & CSS', icon: (
+      <div className="flex justify-center space-x-2 text-4xl">
+        <FaHtml5 className="text-orange-600" />
+        <FaCss3Alt className="text-blue-600" />
+      </div>
+    )
+  },
+  { id: 8, name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-4xl mx-auto" /> },
+  { id: 9, name: 'Firebase', icon: <SiFirebase className="text-yellow-600 text-4xl mx-auto" /> }, { id: 10, name: 'Git', level: 'Intermediate', icon: <FaGit className="text-red-600 text-4xl mx-auto" /> },
 ];
 
 const Skills: React.FC = () => {
@@ -41,7 +42,6 @@ const Skills: React.FC = () => {
             >
               {skill.icon}
               <h3 className="text-lg font-semibold text-gray-800 mt-2">{skill.name}</h3>
-              <p className="text-gray-600">{skill.level}</p>
             </div>
           ))}
         </div>
