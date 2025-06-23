@@ -1,5 +1,6 @@
 import * as React from 'react';
 import WithScrollAnimation from './WithScrollAnimation';
+import profileImage from '../assets/Mukul_Pic.jpg';
 
 const About: React.FC = () => {
   return (
@@ -8,8 +9,12 @@ const About: React.FC = () => {
         <h2 className="text-4xl font-bold text-center mb-8">About Me</h2>
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Profile Image Placeholder */}
-          <div className="w-48 h-48 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center">
-            <span className="text-gray-500">Profile Image</span>
+          <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0">
+            <img 
+              src={profileImage} 
+              alt="Profile" 
+              className="w-full h-full object-cover transform scale-[1.75] translate-x-[15%] translate-y-[30%]" 
+            />
           </div>
           {/* About Text */}
           <div>
