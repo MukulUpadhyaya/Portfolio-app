@@ -6,7 +6,7 @@ const About: React.FC = () => {
   return (
     <WithScrollAnimation animation="animate-slide-in-left">
       <section id="about" className="py-12">
-        <h2 className="text-4xl font-bold text-center mb-8">About Me</h2>
+        <h2 className="text-4xl font-bold text-white text-center mb-8">About Me</h2>
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Profile Image Placeholder */}
           <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0">
@@ -18,7 +18,7 @@ const About: React.FC = () => {
           </div>
           {/* About Text */}
           <div>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-white">
               I'm Mukul, a passionate frontend developer with 3+ years of experience in building scalable web applications and interactive games using JavaScript, TypeScript, React, Phaser.js, and PIXI.js. Skilled in performance
               optimization, design systems, and end-to-end development with a focus on reusable components
               and maintainable code.
