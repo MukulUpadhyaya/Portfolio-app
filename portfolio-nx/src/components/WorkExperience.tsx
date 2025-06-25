@@ -1,5 +1,6 @@
 import * as React from 'react';
 import WithScrollAnimation from './WithScrollAnimation';
+import { useStarryCanvas } from '../utils/useStarryCanvas';
 
 interface Experience {
   id: number;
@@ -37,40 +38,51 @@ const experiences: Experience[] = [
 ];
 
 const WorkExperience: React.FC = () => {
+  const canvasRef = useStarryCanvas();
+
   return (
-    <WithScrollAnimation animation="animate-slide-in-left">
-      <section id="experience" className="py-12">
-        <h2 className="text-4xl font-bold text-center mb-8">Work Experience</h2>
-        <div className="relative max-w-3xl mx-auto">
-          {/* Timeline Line */}
-          <div className="absolute left-4 md:left-1/2 w-1 bg-blue-600 h-full transform -translate-x-1/2"></div>
-          {experiences.map((experience, index) => (
-            <div
-              key={experience.id}
-              className={`mb-8 flex flex-col md:flex-row items-center w-full ${
-                index % 2 === 0 ? 'md:flex-row-reverse' : ''
-              }`}
-            >
-              {/* Timeline Dot */}
-              <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-blue-600 rounded-full transform -translate-x-1/2"></div>
-              {/* Experience Card */}
+    <div className="relative min-h-screen text-white">
+      {/* Starry Background Canvas */}
+      <div className="fixed inset-0 z-[-1]">
+        <canvas ref={canvasRef} className="absolute inset-0" />
+      </div>
+
+      <WithScrollAnimation animation="animate-slide-in-left">
+        <section id="experience" className="py-20 px-4">
+          <h2 className="text-4xl font-bold text-center mb-16">Work Experience</h2>
+          <div className="relative max-w-3xl mx-auto">
+            {/* Vertical Timeline Line */}
+            <div className="absolute left-4 md:left-1/2 w-1 bg-blue-500 h-full transform -translate-x-1/2"></div>
+            {experiences.map((experience, index) => (
               <div
-                className={`w-full md:w-5/12 p-6 bg-white rounded-lg shadow-lg ${
-                  index % 2 === 0 ? 'md:ml-8' : 'md:mr-8'
+                key={experience.id}
+                className={`mb-12 flex flex-col md:flex-row items-center w-full ${
+                  index % 2 === 0 ? 'md:flex-row-reverse' : ''
                 }`}
               >
-                <h3 className="text-xl font-semibold text-gray-800">{experience.title}</h3>
-                <p className="text-gray-600 font-medium">{experience.company}</p>
-                <p className="text-gray-500 text-sm mb-2">{experience.period}</p>
-                <p className="text-gray-700">{experience.description}</p>
+                {/* Timeline Dot */}
+                <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-blue-500 rounded-full transform -translate-x-1/2"></div>
+                
+                {/* Experience Card */}
+                <div
+                  className={`w-full md:w-5/12 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg ${
+                    index % 2 === 0 ? 'md:ml-8' : 'md:mr-8'
+                  }`}
+                >
+                  <h3 className="text-xl font-semibold mb-1">{experience.title}</h3>
+                  <p className="text-white/80 font-medium">{experience.company}</p>
+                  <p className="text-white/60 text-sm mb-3">{experience.period}</p>
+                  <p className="text-white/90">{experience.description}</p>
+                </div>
+
+                {/* Spacer for alignment */}
+                <div className="hidden md:block md:w-5/12"></div>
               </div>
-              {/* Spacer for Timeline Alignment */}
-              <div className="hidden md:block md:w-5/12"></div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </WithScrollAnimation>
+            ))}
+          </div>
+        </section>
+      </WithScrollAnimation>
+    </div>
   );
 };
 
