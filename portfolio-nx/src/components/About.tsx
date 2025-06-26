@@ -29,7 +29,7 @@ const About: React.FC = () => {
             {/* Description */}
             <div className="text-white text-lg leading-relaxed max-w-4xl">
               <p>
-                I'm Mukul, a passionate frontend developer with 3+ years of experience in building scalable web applications and interactive games using JavaScript, TypeScript, React, Phaser.js, and PIXI.js.
+                I'm Mukul Uoadhyaya, a passionate frontend developer with 3+ years of experience in building scalable web applications and interactive games using JavaScript, TypeScript, React, Phaser.js, and PIXI.js.
               </p>
               <p className="mt-4">
                 Skilled in performance optimization, design systems, and end-to-end development with a focus on reusable components and maintainable code.
