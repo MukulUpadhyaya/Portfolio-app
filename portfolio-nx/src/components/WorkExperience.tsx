@@ -15,7 +15,7 @@ const experiences: Experience[] = [
     id: 1,
     title: 'Software Engineer II',
     company: 'Helmerich & Payne',
-    period: 'Sept 2025 - Present',
+    period: 'Sept 2024 - Present',
     description:
       'Migrated a Java-based application to React, creating reusable design system components and leading unit/integration testing. Developed an admin portal with secure role-based authentication, token-based API authorization, and integrated data visualization tools. Orchestrated a Micro-Frontend migration from Vue 2 to Vue 3, reducing JavaScript bundle size by 15%.',
   },
