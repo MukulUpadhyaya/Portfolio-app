@@ -14,7 +14,7 @@ const projects: Project[] = [
     id: 1,
     title: 'Well Management Application',
     description: 'Built a well management app with admin controls, streamlining task assignment for multiple users using Google Firebase.',
-    link: 'https://example.com/project-one',
+    link: 'https://well-management-app.netlify.app/',
   },
   {
     id: 2,
