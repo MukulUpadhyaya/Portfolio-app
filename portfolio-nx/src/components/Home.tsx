@@ -24,7 +24,7 @@ const Home: React.FC = () => {
 
       {/* Hero Section with Fade-In Animation */}
       <WithScrollAnimation animation="animate-fade-in">
-        <section className="relative bg-[radial-gradient(circle_at_50%_20%,_#2a004a_0%,_#1a1a2e_50%,_transparent_80%)] py-20">
+        <section id="top" className="relative bg-[radial-gradient(circle_at_50%_20%,_#2a004a_0%,_#1a1a2e_50%,_transparent_80%)] py-20">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl font-bold text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] transition duration-300">
               Welcome to My Portfolio
