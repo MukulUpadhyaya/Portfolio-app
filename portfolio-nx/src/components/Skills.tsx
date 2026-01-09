@@ -1,0 +1,66 @@
+import * as React from 'react';
+import { FaReact, FaNodeJs, FaGit, FaHtml5, FaCss3Alt, FaJs } from 'react-icons/fa';
+import { SiTypescript, SiTailwindcss, SiFirebase } from 'react-icons/si';
+import { FaGamepad, FaPaintBrush } from 'react-icons/fa';
+import WithScrollAnimation from './WithScrollAnimation';
+import { useStarryCanvas } from '../utils/useStarryCanvas';
+
+interface Skill {
+  id: number;
+  name: string;
+  icon: JSX.Element;
+}
+
+const skills: Skill[] = [
+  { id: 1, name: 'React', icon: <FaReact className="text-blue-500 text-4xl mx-auto" /> },
+  { id: 2, name: 'TypeScript', icon: <SiTypescript className="text-blue-600 text-4xl mx-auto" /> },
+  { id: 3, name: 'PIXI', icon: <FaPaintBrush className="text-purple-600 text-4xl mx-auto" /> },
+  { id: 4, name: 'Phaser', icon: <FaGamepad className="text-indigo-600 text-4xl mx-auto" /> },
+  { id: 5, name: 'Tailwind CSS', icon: <SiTailwindcss className="text-teal-500 text-4xl mx-auto" /> },
+  { id: 6, name: 'JavaScript', icon: <FaJs className="text-yellow-500 text-4xl mx-auto" /> },
+  {
+    id: 7,
+    name: 'HTML & CSS',
+    icon: (
+      <div className="flex justify-center space-x-2 text-4xl">
+        <FaHtml5 className="text-orange-600" />
+        <FaCss3Alt className="text-blue-600" />
+      </div>
+    )
+  },
+  { id: 8, name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-4xl mx-auto" /> },
+  { id: 9, name: 'Firebase', icon: <SiFirebase className="text-yellow-600 text-4xl mx-auto" /> },
+  { id: 10, name: 'Git', icon: <FaGit className="text-red-600 text-4xl mx-auto" /> },
+];
+
+const Skills: React.FC = () => {
+  const canvasRef = useStarryCanvas();
+
+  return (
+    <div className="relative min-h-screen">
+      {/* Background Canvas */}
+      <div className="fixed inset-0 z-[-1]">
+        <canvas ref={canvasRef} className="absolute inset-0" />
+      </div>
+
+      <WithScrollAnimation animation="animate-fade-in">
+        <section id="skills" className="py-20 px-4 container mx-auto text-white">
+          <h2 className="text-4xl font-bold text-center mb-8">My Skills</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {skills.map((skill) => (
+              <div
+                key={skill.id}
+                className="bg-white bg-opacity-10 backdrop-blur-md p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all text-center text-white border border-white/20"
+              >
+                {skill.icon}
+                <h3 className="text-lg font-semibold mt-4">{skill.name}</h3>
+              </div>
+            ))}
+          </div>
+        </section>
+      </WithScrollAnimation>
+    </div>
+  );
+};
+
+export default Skills;

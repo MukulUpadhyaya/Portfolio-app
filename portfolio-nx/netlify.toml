@@ -1,0 +1,8 @@
+[build]
+  command = "nx build portfolio-nx"
+  publish = "dist/portfolio-nx"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
